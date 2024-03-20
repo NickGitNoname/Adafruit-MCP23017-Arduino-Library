@@ -2,7 +2,7 @@
 
 // ok to include only the one needed
 // both included here to make things simple for example
-#include <Adafruit_MCP23X08.h>
+//#include <Adafruit_MCP23X08.h>
 #include <Adafruit_MCP23X17.h>
 
 #define LED_PIN 0     // MCP23XXX pin LED is attached to
