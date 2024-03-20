@@ -11,8 +11,8 @@
 #define CS_PIN 6
 
 // uncomment appropriate line
-Adafruit_MCP23X08 mcp;
-//Adafruit_MCP23X17 mcp;
+//Adafruit_MCP23X08 mcp;
+Adafruit_MCP23X17 mcp;
 
 void setup() {
   Serial.begin(9600);
@@ -20,8 +20,8 @@ void setup() {
   Serial.println("MCP23xxx Blink Test!");
 
   // uncomment appropriate mcp.begin
-  if (!mcp.begin_I2C()) {
-  //if (!mcp.begin_SPI(CS_PIN)) {
+  //if (!mcp.begin_I2C()) {
+  if (!mcp.begin_SPI(CS_PIN)) {
     Serial.println("Error.");
     while (1);
   }
